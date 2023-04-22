@@ -1,3 +1,5 @@
+document.querySelector('.Encriptar').addEventListener('click',encript)
+document.querySelector('.Desencriptar').addEventListener('click',desencript)
 function encript(){   
     let texto = document.querySelector('.areaEscrita').value.toLowerCase()
     let textEncriptado = texto.replace(/e/g,'enter')
