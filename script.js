@@ -1,14 +1,3 @@
-const octokit = new Octokit({
-  auth: 'YOUR-TOKEN'
-})
-await octokit.request('GET /repos/{owner}/{repo}/pages', {
-  owner: 'OWNER',
-  repo: 'REPO',
-  headers: {
-    'X-GitHub-Api-Version': '2022-11-28'
-        }
-    }
-)      
 function encript(){   
     let texto = document.querySelector('.areaEscrita').value.toLowerCase()
     let textEncriptado = texto.replace(/e/g,'enter')
